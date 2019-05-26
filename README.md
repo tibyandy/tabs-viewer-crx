@@ -11,5 +11,5 @@ A "Hello World" Chrome Extension.
    (the one containing the `manifest.json` file)
 
 ## Source code
-- Just navigate into [/src](/tree/master/src) folder.  
+- Just navigate into [/src](src) folder.  
   (the `/manifest.json` file is needed as well)
