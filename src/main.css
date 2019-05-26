@@ -1,0 +1,72 @@
+﻿html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', 'Roboto', Arial, Helvetica, sans-serif;
+    background: #ddd;
+    width: 100%;
+    height: 100%;
+    font-weight: 300;
+    font-size: 18px;
+}
+.tabs img.loading {
+    image-rendering: pixelated;
+    width: 50px;
+    height: 50px;
+    margin: 15px 25px 39px;
+    opacity: 0.01;
+}
+.tabs img {
+    width: 96px;
+    height: 96px;
+    margin: 0 4px 8px;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    display: block;
+    align-self: center;
+    pointer-events: none;
+    transition: all 200ms, opacity 300ms ease-in;
+}
+.tabs img.pixelated {
+    image-rendering: pixelated;
+    width: 80px;
+    height: 80px;
+    margin: 0px 10px 24px;
+}
+
+/* pre { font-size: 8px; font-family: 'Rubik' } */
+pre { display: none }
+
+h2 { margin: 0; padding-left: 8px; display: inline-block; }
+.window .title { background: #fff; padding: 9px 9px 7px; border-radius: 10px; margin: 10px 6px 0 }
+.window .title h2 { vertical-align: bottom }
+
+.tabs { display: flex; flex-wrap: wrap }
+.tabs div {
+    width: 256px;
+    border-radius: 6px;
+    display: flex;
+    flex-flow: column;
+    cursor: default;
+    user-select: none;
+
+    margin: 10px 7px 4px;
+    padding: 9px;
+    border: solid 1px #eee;
+    border-width: 0px 1px;
+    box-shadow: 0 -1px 0 #ccc, 0 -1px 0 #ddd inset;
+    background: #eee;
+
+    transition: all 150ms;
+}
+.tabs div:hover:not(.active):not(:active) {
+    border-color: #eee;
+    box-shadow: 0 -1px 0 #fff inset, 0 -2px 0 #ccf inset, 0 1px 0px #88f, -1px 0 0px #88f, 0 -1px 0px #ccf, 0 -2px 0px #88f, 1px 0 0px #88f;
+    background: #f4f4f4;
+}
+.tabs div:hover .index { font-weight: bold; color: #44c }
+.tabs div:active:not(.active) {
+    border-color:  #fff;
+    box-shadow: 0 -1px 0 #ccc, 0 -1px 0 #ddd inset, 0 1px 6px #888;
+    background: #fff;
+}

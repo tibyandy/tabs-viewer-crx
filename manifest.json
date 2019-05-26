@@ -1,0 +1,25 @@
+{
+   "version": "0.1.0",
+   "name": "Tabs Viewer",
+   "description": "View Browser Tabs",
+   "minimum_chrome_version": "51",
+   "manifest_version": 2,
+   "background": {
+      "scripts": ["src/background.js"],
+      "persistent": false
+   },
+   "icons": {
+      "16": "src/images/logo/logo_16x16.png",
+      "32": "src/images/logo/logo_32x32.png",
+      "48": "src/images/logo/logo_48x48.png",
+      "128": "src/images/logo/logo_128x128.png"
+   },
+   "browser_action": {
+      "default_icon": {
+         "16": "src/images/logo/logo_16x16.png"
+      },
+      "default_title": "View Browser Tabs"
+   },
+   "content_security_policy": "script-src 'self' https://www.google-analytics.com; object-src 'self'",
+   "permissions": [ "storage", "tabs" ]
+}
