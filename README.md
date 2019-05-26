@@ -4,7 +4,7 @@ A "Hello World" Chrome Extension.
 ![Tabs Viewer Chrome Extension preview](docs/preview.png?raw=true "Tabs Viewer Chrome Extension preview")
 
 ## Installing
-- [Download the .crx](/tree/master/dist)
+- [Download the .crx](/raw/master/dist/tabs-viewer.crx)
 
 ## Development Extras
 
